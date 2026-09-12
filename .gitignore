@@ -1,0 +1,44 @@
+# Debian package output
+*.deb
+*.ddeb
+*.dsc
+*.changes
+*.buildinfo
+*.build
+*.tar.gz
+*.tar.xz
+*.tar.bz2
+*.upload
+
+# dpkg-buildpackage / debuild leftovers
+debian/files
+debian/*.debhelper
+debian/*.debhelper.log
+debian/*.substvars
+debian/.debhelper/
+debian/tmp/
+debian/bm-git-shortcuts/
+
+# Local build directories
+build/
+dist/
+*.o
+
+# Editor and OS files
+*~
+*.swp
+*.swo
+*.bak
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Python test leftovers (if added later)
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.env
+.env.*
