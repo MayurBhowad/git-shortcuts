@@ -13,7 +13,7 @@ The project must be installable as a Debian package (`.deb`) using
 Example installation:
 
 ``` bash
-sudo dpkg -i bm-git-shortcuts_0.1.0_amd64.deb
+sudo dpkg -i bm-git-shortcuts_0.1.0-1_all.deb
 ```
 
 After installation, the user should be able to run:
@@ -190,13 +190,13 @@ bm-git-shortcuts_<version>_<architecture>.deb
 Example:
 
 ``` text
-bm-git-shortcuts_0.1.0_amd64.deb
+bm-git-shortcuts_0.1.0-1_all.deb
 ```
 
 Expected installation:
 
 ``` bash
-sudo dpkg -i bm-git-shortcuts_0.1.0_amd64.deb
+sudo dpkg -i bm-git-shortcuts_0.1.0-1_all.deb
 ```
 
 Expected removal:
@@ -346,7 +346,7 @@ Test:
 After building the `.deb`:
 
 ``` bash
-dpkg -i bm-git-shortcuts_0.1.0_amd64.deb
+dpkg -i bm-git-shortcuts_0.1.0-1_all.deb
 ```
 
 verify:
@@ -428,7 +428,7 @@ Do not add complexity merely because it is possible.
 The first useful release should allow a Linux user to:
 
 ``` bash
-sudo dpkg -i bm-git-shortcuts_0.1.0_amd64.deb
+sudo dpkg -i bm-git-shortcuts_0.1.0-1_all.deb
 ```
 
 and immediately use:
