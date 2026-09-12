@@ -42,3 +42,5 @@ __pycache__/
 venv/
 .env
 .env.*
+
+debian/debhelper-build-stamp

@@ -54,7 +54,7 @@ Full examples, workflows, and notes are in the
 ## Install
 
 ```bash
-sudo dpkg -i bm-git-shortcuts_0.1.0_amd64.deb
+sudo dpkg -i bm-git-shortcuts_0.1.0-1_all.deb
 ```
 
 The package installs the shortcut commands. You do not copy files by
