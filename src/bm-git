@@ -21,18 +21,25 @@ COMMANDS = {
 }
 
 
+def build_command(command: str, args: list[str]) -> list[str]:
+    """Build the Git command for a shortcut."""
+    if command not in COMMANDS:
+        raise ValueError(f"unknown command: {command}")
+
+    return [*COMMANDS[command], *args]
+
+
 def main() -> int:
     command = os.path.basename(sys.argv[0])
 
-    if command not in COMMANDS:
+    try:
+        git_command = build_command(command, sys.argv[1:])
+    except ValueError:
         print(f"bm-git: unknown command: {command}", file=sys.stderr)
         return 1
 
-    git_command = COMMANDS[command]
-    args = sys.argv[1:]
-
     try:
-        result = subprocess.run([*git_command, *args])
+        result = subprocess.run(git_command)
     except FileNotFoundError:
         print(
             "bm-git: git is not installed or not available in PATH",
