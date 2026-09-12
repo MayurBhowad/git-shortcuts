@@ -477,10 +477,11 @@ When continuing work on this project:
 
 **Project:** `bm-git-shortcuts`
 
-**Current version:** `0.1.0` (planned)
+**Current version:** `0.1.0`
 
-**Status:** Project defined. User-facing docs written. Implementation
-not started.
+**Status:** Implementation and local Debian packaging are complete and
+verified. The `0.1.0-1` Debian package has been built, installed,
+runtime-tested, and removed successfully.
 
 ### Completed
 
@@ -491,17 +492,43 @@ not started.
 -   [x] Initial architecture direction defined.
 -   [x] Write user-facing `README.md` (repo overview, install, start).
 -   [x] Write `USER_GUIDE.md` (current 0.1.0 features and usage).
+-   [x] Create repository structure.
+-   [x] Implement shortcut dispatcher.
+-   [x] Create all standalone shortcut entry points.
+-   [x] Add automated tests.
+-   [x] All 18 automated tests passing.
+-   [x] Implement Debian packaging.
+-   [x] Configure Debian source format (`3.0 (quilt)`).
+-   [x] Build `bm-git-shortcuts_0.1.0-1_all.deb`.
+-   [x] Inspect Debian package contents.
+-   [x] Install package locally with `dpkg`.
+-   [x] Verify installed commands.
+-   [x] Test shortcut execution against Git.
+-   [x] Verify argument forwarding with `gdf --stat` and
+    `gpl --dry-run`.
+-   [x] Verify package removal with `dpkg`.
+-   [x] Verify shortcut commands disappear after package removal.
+
+### Current Build Artifacts
+
+The successful local build produces:
+
+-   `bm-git-shortcuts_0.1.0-1_all.deb`
+-   `bm-git-shortcuts_0.1.0-1.dsc`
+-   `bm-git-shortcuts_0.1.0-1.debian.tar.xz`
+-   `bm-git-shortcuts_0.1.0.orig.tar.gz`
+
+The binary package is `Architecture: all`.
 
 ### Next
 
--   [ ] Create repository structure.
--   [ ] Implement shortcut dispatcher.
--   [ ] Implement Debian packaging.
--   [ ] Add tests.
--   [ ] Build `.deb`.
--   [ ] Install locally with `dpkg`.
--   [ ] Test all shortcuts.
--   [ ] Prepare `0.1.0` release.
+-   [ ] Review and synchronize `README.md` and `USER_GUIDE.md` with the
+    verified Debian package workflow.
+-   [ ] Clean up obsolete/generated build artifacts.
+-   [ ] Add appropriate Debian/package build artifacts to `.gitignore`.
+-   [ ] Review package metadata and release files.
+-   [ ] Prepare the `0.1.0` release.
+-   [ ] Push the completed work to `origin/dev`.
 
 ------------------------------------------------------------------------
 
