@@ -1,0 +1,17 @@
+Source: bm-git-shortcuts
+Section: devel
+Priority: optional
+Maintainer: Mayur Bhowad
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.7.0
+Rules-Requires-Root: no
+
+Package: bm-git-shortcuts
+Architecture: all
+Depends: git, python3
+Description: Short standalone commands for Git
+ bm-git-shortcuts provides short standalone commands for common Git
+ operations.
+ .
+ Examples include gpl for git pull, gps for git push, and gst for
+ git status.
