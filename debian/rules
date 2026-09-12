@@ -1,0 +1,17 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+override_dh_auto_build:
+	# Nothing to build.
+
+override_dh_install:
+	dh_install
+
+	mkdir -p debian/bm-git-shortcuts/usr/bin
+
+	for cmd in gpl gps gst gco gcb gcm gca gdf gbr gss gsp glg; do \
+		ln -sf /usr/lib/bm-git-shortcuts/bm-git \
+			debian/bm-git-shortcuts/usr/bin/$$cmd; \
+	done
