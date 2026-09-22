@@ -11,7 +11,7 @@ override_dh_install:
 
 	mkdir -p debian/bm-git-shortcuts/usr/bin
 
-	for cmd in gpl gps gst gco gcb gcm gca gdf gbr gss gsp glg; do \
+	for cmd in gpl gps gst gft gco gcb gcm gca gdf gbr gss gsp glg; do \
 		ln -sf /usr/lib/bm-git-shortcuts/bm-git \
 			debian/bm-git-shortcuts/usr/bin/$$cmd; \
 	done

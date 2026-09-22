@@ -33,6 +33,7 @@ Current version: **0.1.0**
 | `gpl` | `git pull` |
 | `gps` | `git push` |
 | `gst` | `git status` |
+| `gft` | `git fetch` |
 | `gco` | `git checkout` |
 | `gcb` | `git checkout -b` |
 | `gcm` | `git commit -m` |

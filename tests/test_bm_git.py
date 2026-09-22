@@ -39,6 +39,12 @@ class TestBuildCommand(unittest.TestCase):
             ["git", "status"],
         )
 
+    def test_gft(self):
+        self.assertEqual(
+            bm_git.build_command("gft", ["--all"]),
+            ["git", "fetch", "--all"],
+        )
+
     def test_gco(self):
         self.assertEqual(
             bm_git.build_command("gco", ["main"]),

@@ -38,13 +38,14 @@ obscurely.
 
 ## Feature list (0.1.0)
 
-These twelve commands are the current feature set.
+These thirteen commands are the current feature set.
 
 | Shortcut | Git command | Typical use |
 | -------- | ----------- | ----------- |
 | `gpl` | `git pull` | Update the current branch |
 | `gps` | `git push` | Publish commits |
 | `gst` | `git status` | See working tree state |
+| `gft` | `git fetch` | Download remote updates without merging |
 | `gco` | `git checkout` | Switch branch or restore files |
 | `gcb` | `git checkout -b` | Create and switch to a branch |
 | `gcm` | `git commit -m` | Commit with a message |
@@ -89,6 +90,17 @@ gps -u origin feature/login
 ```
 
 Runs `git push` with the same arguments.
+
+### `gft` — fetch
+
+```bash
+gft
+gft --all
+gft origin
+```
+
+Runs `git fetch` with the same arguments. Downloads remote updates
+without merging them into your current branch.
 
 ### `gco` — checkout
 
@@ -245,6 +257,7 @@ Git command.
 | `gpl` | `git pull` |
 | `gpl --rebase` | `git pull --rebase` |
 | `gps origin main` | `git push origin main` |
+| `gft --all` | `git fetch --all` |
 | `gco main` | `git checkout main` |
 | `gcb feature/login` | `git checkout -b feature/login` |
 | `gcm "fix login issue"` | `git commit -m "fix login issue"` |
@@ -282,7 +295,7 @@ sudo dpkg -i bm-git-shortcuts_0.1.0-1_all.deb
 Confirm commands exist:
 
 ```bash
-which gpl gps gst gco gcb gcm gca gdf gbr gss gsp glg
+which gpl gps gst gft gco gcb gcm gca gdf gbr gss gsp glg
 ```
 
 Remove:

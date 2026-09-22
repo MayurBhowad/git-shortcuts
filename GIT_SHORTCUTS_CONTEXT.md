@@ -59,6 +59,7 @@ Version `0.1.0` should target these commands:
   `gpl`      `git pull`
   `gps`      `git push`
   `gst`      `git status`
+  `gft`      `git fetch`
   `gco`      `git checkout`
   `gcb`      `git checkout -b`
   `gcm`      `git commit -m`
@@ -163,6 +164,7 @@ The package should expose the standalone commands:
 gpl
 gps
 gst
+gft
 gco
 gcb
 gcm
@@ -578,8 +580,8 @@ Keep these three files aligned whenever product behavior changes.
 
 | Doc | Last updated | Covers |
 | --- | ------------ | ------ |
-| `README.md` | 2026-09-12 | Repo identity, 12 shortcuts, `dpkg` install/remove |
-| `USER_GUIDE.md` | 2026-09-12 | All 0.1.0 commands, workflows, arguments, errors |
+| `README.md` | 2026-09-22 | Repo identity, 13 shortcuts, `dpkg` install/remove |
+| `USER_GUIDE.md` | 2026-09-22 | All commands including `gft`, workflows, arguments, errors |
 
 ### Feature set documented in the user guide
 
@@ -587,7 +589,7 @@ These are the features described as available in `USER_GUIDE.md`.
 Implementation of the dispatcher and `.deb` is still pending (see
 section 14).
 
--   `gpl` `gps` `gst` `gco` `gcb` `gcm`
+-   `gpl` `gps` `gst` `gft` `gco` `gcb` `gcm`
 -   `gca` `gdf` `gbr` `gss` `gsp` `glg`
 
 ### When to update docs
