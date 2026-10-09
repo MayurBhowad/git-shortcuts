@@ -22,7 +22,9 @@ You never type `bm-git` first.
 ## Before you start
 
 1. Install Git.
-2. Install the package:
+2. Download `bm-git-shortcuts_0.1.0-1_all.deb` from the
+   [v0.1.0 release](https://github.com/MayurBhowad/git-shortcuts/releases/tag/v0.1.0),
+   then install it:
 
    ```bash
    sudo dpkg -i bm-git-shortcuts_0.1.0-1_all.deb
@@ -257,6 +259,13 @@ gdf --staged
 gca -m "fix login validation"
 ```
 
+### Merge a branch into the current branch
+
+```bash
+gco main
+gmg feature/login
+```
+
 ---
 
 ## How arguments work
@@ -299,7 +308,9 @@ echo $?    # same status Git returned
 
 ## Install, check, remove
 
-Install:
+Download `bm-git-shortcuts_0.1.0-1_all.deb` from the
+[v0.1.0 release](https://github.com/MayurBhowad/git-shortcuts/releases/tag/v0.1.0),
+then install it:
 
 ```bash
 sudo dpkg -i bm-git-shortcuts_0.1.0-1_all.deb
