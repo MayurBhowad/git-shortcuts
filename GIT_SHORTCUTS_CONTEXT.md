@@ -528,8 +528,8 @@ The binary package is `Architecture: all`.
 
 ### Next
 
--   [ ] Review and synchronize `README.md` and `USER_GUIDE.md` with the
-    verified Debian package workflow.
+-   [x] Review and synchronize `README.md` and `USER_GUIDE.md` with the
+    verified Debian package workflow and the v0.1.0 GitHub release.
 -   [ ] Clean up obsolete/generated build artifacts.
 -   [ ] Add appropriate Debian/package build artifacts to `.gitignore`.
 -   [ ] Review package metadata and release files.
@@ -584,14 +584,15 @@ Keep these three files aligned whenever product behavior changes.
 
 | Doc | Last updated | Covers |
 | --- | ------------ | ------ |
-| `README.md` | 2026-10-09 | Repo identity, 14 shortcuts, `dpkg` install/remove |
-| `USER_GUIDE.md` | 2026-10-09 | All commands including `gmg`, workflows, arguments, errors |
+| `README.md` | 2026-10-09 | Repo identity, 14 shortcuts, release download, `dpkg` install/remove |
+| `USER_GUIDE.md` | 2026-10-09 | All commands including `gmg`, merge workflow, release download |
 
 ### Feature set documented in the user guide
 
 These are the features described as available in `USER_GUIDE.md`.
-Implementation of the dispatcher and `.deb` is still pending (see
-section 14).
+The dispatcher, the `.deb`, and the
+[v0.1.0 GitHub release](https://github.com/MayurBhowad/git-shortcuts/releases/tag/v0.1.0)
+all include this set. The release notes list the same 14 commands.
 
 -   `gpl` `gps` `gst` `gft` `gco` `gcb` `gcm`
 -   `gca` `gdf` `gbr` `gss` `gsp` `glg` `gmg`

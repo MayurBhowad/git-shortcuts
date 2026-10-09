@@ -55,6 +55,10 @@ Full examples, workflows, and notes are in the
 
 ## Install
 
+Download `bm-git-shortcuts_0.1.0-1_all.deb` from the
+[v0.1.0 release](https://github.com/MayurBhowad/git-shortcuts/releases/tag/v0.1.0),
+then install it:
+
 ```bash
 sudo dpkg -i bm-git-shortcuts_0.1.0-1_all.deb
 ```
@@ -79,6 +83,7 @@ gco main            # git checkout main
 gcb feature/login   # git checkout -b feature/login
 gcm "fix login"     # git commit -m "fix login"
 gps origin main     # git push origin main
+gmg feature/login   # git merge feature/login
 ```
 
 Quoted arguments stay quoted. Extra flags are passed through to Git:
@@ -102,11 +107,11 @@ That removes the installed shortcuts.
 git-shortcuts/
 ├── README.md                  # this file — repo overview
 ├── USER_GUIDE.md              # how to use the current features
-└── GIT_SHORTCUTS_CONTEXT.md   # project goals, status, and AI context
+├── GIT_SHORTCUTS_CONTEXT.md   # project goals, status, and AI context
+├── src/bm-git                 # shortcut dispatcher
+├── debian/                    # Debian package metadata
+└── tests/                     # automated tests
 ```
-
-Implementation, Debian packaging, and tests will live alongside these
-docs as the 0.1.0 package is built.
 
 ## Documentation
 
