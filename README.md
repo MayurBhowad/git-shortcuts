@@ -43,6 +43,7 @@ Current version: **0.1.0**
 | `gss` | `git stash` |
 | `gsp` | `git stash pop` |
 | `glg` | `git log --oneline --graph` |
+| `gmg` | `git merge` |
 
 Full examples, workflows, and notes are in the
 [User Guide](USER_GUIDE.md).

@@ -69,6 +69,7 @@ Version `0.1.0` should target these commands:
   `gss`      `git stash`
   `gsp`      `git stash pop`
   `glg`      `git log --oneline --graph`
+  `gmg`      `git merge`
 
 This list can grow in future versions.
 
@@ -174,6 +175,7 @@ gbr
 gss
 gsp
 glg
+gmg
 ```
 
 `bm-git` may exist internally, but the user-facing workflow is the
@@ -321,6 +323,7 @@ gbr
 gss
 gsp
 glg
+gmg
 ```
 
 ### Commands with arguments
@@ -331,6 +334,7 @@ gcb feature/test
 gps origin main
 gpl --rebase
 gcm "test commit"
+gmg feature/test
 ```
 
 ### Error handling
@@ -498,7 +502,7 @@ runtime-tested, and removed successfully.
 -   [x] Implement shortcut dispatcher.
 -   [x] Create all standalone shortcut entry points.
 -   [x] Add automated tests.
--   [x] All 18 automated tests passing.
+-   [x] All 20 automated tests passing.
 -   [x] Implement Debian packaging.
 -   [x] Configure Debian source format (`3.0 (quilt)`).
 -   [x] Build `bm-git-shortcuts_0.1.0-1_all.deb`.
@@ -580,8 +584,8 @@ Keep these three files aligned whenever product behavior changes.
 
 | Doc | Last updated | Covers |
 | --- | ------------ | ------ |
-| `README.md` | 2026-09-22 | Repo identity, 13 shortcuts, `dpkg` install/remove |
-| `USER_GUIDE.md` | 2026-09-22 | All commands including `gft`, workflows, arguments, errors |
+| `README.md` | 2026-10-09 | Repo identity, 14 shortcuts, `dpkg` install/remove |
+| `USER_GUIDE.md` | 2026-10-09 | All commands including `gmg`, workflows, arguments, errors |
 
 ### Feature set documented in the user guide
 
@@ -590,7 +594,7 @@ Implementation of the dispatcher and `.deb` is still pending (see
 section 14).
 
 -   `gpl` `gps` `gst` `gft` `gco` `gcb` `gcm`
--   `gca` `gdf` `gbr` `gss` `gsp` `glg`
+-   `gca` `gdf` `gbr` `gss` `gsp` `glg` `gmg`
 
 ### When to update docs
 

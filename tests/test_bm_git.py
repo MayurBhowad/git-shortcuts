@@ -99,6 +99,12 @@ class TestBuildCommand(unittest.TestCase):
             ["git", "log", "--oneline", "--graph"],
         )
 
+    def test_gmg(self):
+        self.assertEqual(
+            bm_git.build_command("gmg", ["feature/login"]),
+            ["git", "merge", "feature/login"],
+        )
+
     def test_arguments_are_preserved(self):
         args = ["origin", "main", "--force-with-lease"]
 

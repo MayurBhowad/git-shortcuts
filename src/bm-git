@@ -19,6 +19,7 @@ COMMANDS = {
     "gss": ["git", "stash"],
     "gsp": ["git", "stash", "pop"],
     "glg": ["git", "log", "--oneline", "--graph"],
+    "gmg": ["git", "merge"],
 }
 
 
