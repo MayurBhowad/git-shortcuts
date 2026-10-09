@@ -38,7 +38,7 @@ obscurely.
 
 ## Feature list (0.1.0)
 
-These thirteen commands are the current feature set.
+These fourteen commands are the current feature set.
 
 | Shortcut | Git command | Typical use |
 | -------- | ----------- | ----------- |
@@ -55,6 +55,7 @@ These thirteen commands are the current feature set.
 | `gss` | `git stash` | Stash local changes |
 | `gsp` | `git stash pop` | Restore the latest stash |
 | `glg` | `git log --oneline --graph` | Compact history graph |
+| `gmg` | `git merge` | Merge a branch into the current branch |
 
 Anything you would pass to the Git command, you pass to the shortcut.
 
@@ -195,6 +196,17 @@ glg --all
 Runs `git log --oneline --graph`. Extra flags are appended after that
 fixed log format.
 
+### `gmg` — merge
+
+```bash
+gmg feature/login
+gmg --no-ff feature/login
+gmg origin/main
+```
+
+Runs `git merge` with the same arguments. Git's usual merge rules still
+apply, including conflict handling.
+
 ---
 
 ## Everyday workflows
@@ -262,6 +274,7 @@ Git command.
 | `gcb feature/login` | `git checkout -b feature/login` |
 | `gcm "fix login issue"` | `git commit -m "fix login issue"` |
 | `glg -10 --all` | `git log --oneline --graph -10 --all` |
+| `gmg feature/login` | `git merge feature/login` |
 
 Quotes and spaces are preserved. If you would quote something for Git,
 quote it the same way for the shortcut.
@@ -295,7 +308,7 @@ sudo dpkg -i bm-git-shortcuts_0.1.0-1_all.deb
 Confirm commands exist:
 
 ```bash
-which gpl gps gst gft gco gcb gcm gca gdf gbr gss gsp glg
+which gpl gps gst gft gco gcb gcm gca gdf gbr gss gsp glg gmg
 ```
 
 Remove:
